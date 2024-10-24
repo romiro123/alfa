@@ -1,0 +1,23 @@
+.title {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.9px;
+  margin: 0;
+
+  &--product {
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--black);
+    text-transform: uppercase;
+  }
+  &--articul {
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--grey);
+    text-transform: uppercase;
+  }
+  &--filter {
+    color: var(--black);
+    text-transform: uppercase;
+  }
+}

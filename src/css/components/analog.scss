@@ -1,0 +1,59 @@
+.analog {
+  &__item {
+    position: relative;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 495px 150px 105px 155px 90px;
+    gap: 15px;
+    padding: 4px 0;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0px;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      background-color: var(--light-grey);
+    }
+  }
+  &__link {
+    max-width: 440px;
+  }
+  &__price {
+    font-weight: 700;
+  }
+  &__basket-wrap {
+    display: flex;
+    gap: 11px;
+    justify-content: flex-end;
+  }
+  &__quantity {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    border: 1px solid var(--grey);
+    border-radius: 3px;
+    transition: all 0.2s ease;
+
+    &:hover {
+      border-color: var(--black);
+    }
+  }
+  &__basket {
+    height: 32px;
+    width: 32px;
+    background-image: url("data:image/svg+xml,%3Csvg width='32' height='32' viewBox='0 0 32 32' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8.79134 20.2075L6.48966 3.89453H3.125M7.25268 9.22637H27.5579C28.2192 9.22637 28.6984 9.85682 28.5214 10.494L25.7099 20.6155C25.45 21.5513 24.5979 22.1989 23.6267 22.1989H10.937C9.85782 22.1989 8.9439 21.4032 8.79544 20.3343L7.25268 9.22637Z' stroke='%23727271' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M12.8951 26.5296C12.8951 27.4002 12.1893 28.106 11.3186 28.106C10.448 28.106 9.74219 27.4002 9.74219 26.5296C9.74219 25.6589 10.448 24.9531 11.3186 24.9531C12.1893 24.9531 12.8951 25.6589 12.8951 26.5296Z' fill='%23727271'/%3E%3Cpath d='M24.9008 26.5296C24.9008 27.4002 24.195 28.106 23.3243 28.106C22.4537 28.106 21.7479 27.4002 21.7479 26.5296C21.7479 25.6589 22.4537 24.9531 23.3243 24.9531C24.195 24.9531 24.9008 25.6589 24.9008 26.5296Z' fill='%23727271'/%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    transition: all 0.2s ease;
+
+    &:hover {
+      box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+    }
+  }
+}

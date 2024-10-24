@@ -1,0 +1,9 @@
+.chips {
+  background-color: var(--red);
+  background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.66797 1.66724L8.00065 7.99992M8.00065 7.99992L14.3333 14.3326M8.00065 7.99992L1.66797 14.3326M8.00065 7.99992L14.3333 1.66724' stroke='white' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+  background-repeat: no-repeat;
+  background-position: calc(100% - (15px / 2)) center;
+  border-radius: 20px;
+  padding: 5px 30px 5px 15px;
+  color: var(--white);
+}

@@ -1,0 +1,56 @@
+.filter {
+  &__title {
+    margin-bottom: 15px;
+  }
+  &__search {
+    margin-bottom: 15px;
+  }
+  &__list {
+    position: relative;
+  }
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+  &__info {
+    position: absolute;
+    left: calc(100% + 15px);
+    text-align: center;
+    padding: 12px 20px;
+    min-width: 140px;
+    background-color: var(--red);
+    color: var(--white);
+    border-radius: 8px;
+  }
+  &__count {
+    display: block;
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 5px;
+  }
+  &__count-desc {
+    display: block;
+    font-size: 12px;
+  }
+}
+
+.brand {
+  max-height: 382px;
+  overflow: auto;
+
+  &::-webkit-scrollbar {
+    width: 7px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: var(--light-grey);
+    border-radius: 8px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    height: 100px;
+    border-radius: 8px;
+    background-color: var(--medium-grey);
+  }
+}

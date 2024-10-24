@@ -1,0 +1,39 @@
+.pagination {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 60px 0;
+
+  &__nav {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+  }
+  &__show {
+    display: block;
+    margin: 0 auto;
+  }
+  &__list {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+  }
+  &__item {
+  }
+  &__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+  }
+  &__link {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

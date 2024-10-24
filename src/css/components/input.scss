@@ -1,0 +1,23 @@
+.input {
+  &--search {
+    background-color: var(--white);
+    border: 1px solid var(--medium-grey);
+    border-radius: 5px;
+    padding: 15px 10px 15px 52px;
+    font-size: 14px;
+    font-family: inherit;
+    background-image: url("data:image/svg+xml,%3Csvg width='32' height='32' viewBox='0 0 32 32' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M19.5493 19.5493L28.6683 28.6683M22.3328 12.8295C22.3328 18.078 18.078 22.3328 12.8295 22.3328C7.58094 22.3328 3.32617 18.078 3.32617 12.8295C3.32617 7.58094 7.58094 3.32617 12.8295 3.32617C18.078 3.32617 22.3328 7.58094 22.3328 12.8295Z' stroke='%23B2ADAD' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+      border-color: var(--red);
+    }
+
+    &:focus {
+      border-color: var(--red);
+      outline: none;
+    }
+  }
+}

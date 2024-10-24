@@ -1,0 +1,29 @@
+.link {
+  transition: all 0.2s ease;
+  &--analog {
+    color: var(--grey);
+
+    &:hover {
+      color: var(--black);
+      transform: translateX(5px);
+    }
+  }
+  &--pagination {
+    color: var(--black);
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+      box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.25);
+    }
+    &:active {
+      background-color: var(--blue);
+      color: var(--white);
+    }
+    &-active {
+      background-color: var(--blue);
+      color: var(--white);
+    }
+  }
+}
